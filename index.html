@@ -214,7 +214,14 @@
 <section>
   <h2>QRコード（本ページ）</h2>
   <div class="qrbox">
-    <div class="qr" id="qr"></div>
+    <div class="qr">
+  <img
+    src="morido_notice_qr.png"
+    alt="QRコード（本ページ）"
+    style="width:160px; height:160px;"
+  />
+</div>
+
     <div class="muted">
       スマートフォンで読み取ると<br>
       この周知ページを開けます。
@@ -231,21 +238,7 @@
 
 </div>
 
-<script>
-  // 公開URLを設定
-  const PAGE_URL = "https://taiyokogyo-nao.github.io/morido-notice/";
 
-  document.getElementById("urlText").textContent = PAGE_URL;
-
-  const qrUrl =
-    "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chld=M|0&chl=" +
-    encodeURIComponent(PAGE_URL);
-
-  const img = new Image();
-  img.src = qrUrl;
-  img.alt = "QRコード";
-  document.getElementById("qr").appendChild(img);
-</script>
 
 </body>
 </html>
